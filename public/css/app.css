@@ -705,6 +705,10 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -720,9 +724,12 @@ select {
 .-mr-2 {
   margin-right: -0.5rem;
 }
+<<<<<<< HEAD
 .mt-2 {
   margin-top: 0.5rem;
 }
+=======
+>>>>>>> index_pagination
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -732,14 +739,20 @@ select {
 .mt-4 {
   margin-top: 1rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -803,9 +816,27 @@ select {
 }
 .w-6 {
   width: 1.5rem;
+<<<<<<< HEAD
 }
 .w-48 {
   width: 12rem;
+=======
+}
+.w-20 {
+  width: 5rem;
+}
+.w-full {
+  width: 100%;
+}
+.w-48 {
+  width: 12rem;
+}
+.w-8 {
+  width: 2rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
+>>>>>>> index_pagination
 }
 .w-20 {
   width: 5rem;
@@ -816,8 +847,8 @@ select {
 .w-8 {
   width: 2rem;
 }
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-6xl {
+  max-width: 72rem;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -1072,11 +1103,21 @@ select {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+<<<<<<< HEAD
+=======
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+>>>>>>> index_pagination
 .font-medium {
   font-weight: 500;
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1161,6 +1202,9 @@ select {
 }
 .opacity-100 {
   opacity: 1;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -1250,6 +1294,10 @@ select {
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
@@ -1365,6 +1413,10 @@ select {
 
   .sm\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:block {
