@@ -59,7 +59,7 @@ class NoteController extends Controller
      */
     public function show(Note $note)
     {
-        //
+        return view('notes.show')->with('note', $note);
     }
 
     /**
