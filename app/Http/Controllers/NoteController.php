@@ -15,9 +15,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        // $notes = Note::where('user_id', Auth::id())->get();
-        $notes = Note::where('user_id', Auth::id())->latest('updated_at')->paginate(1);
-        // dd($notes);
+        $notes = Note::where('user_id', Auth::id())->latest('updated_at')->paginate(3);
         return view('notes.index')->with('notes', $notes);
     }
 
@@ -28,7 +26,7 @@ class NoteController extends Controller
      */
     public function create()
     {
-        //
+        return view('notes.create');
     }
 
     /**
@@ -39,7 +37,18 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request);
+        $request->validate([
+            'title' => 'required|max:120',
+            'text' => 'required'
+        ]);
+
+        Note::create([
+            'user_id' => Auth::id(),
+            'title' => $request->title,
+            'text' =>  $request->text
+        ]);
+        return to_route('notes.index');
     }
 
     /**
