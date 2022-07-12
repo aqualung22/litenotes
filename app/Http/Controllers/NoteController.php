@@ -49,7 +49,7 @@ class NoteController extends Controller
             'title' => $request->title,
             'text' =>  $request->text
         ]);
-        return to_route('notes.index');
+        return to_route('notes.index')->with('success','Note created successfully.');;
     }
 
     /**
@@ -93,7 +93,7 @@ class NoteController extends Controller
             'text' =>  $request->text
         ]);
 
-        return to_route('notes.show', $note);
+        return to_route('notes.show', $note)->with('success','Note updated successfully.');
     }
 
     /**
@@ -105,6 +105,6 @@ class NoteController extends Controller
     public function destroy(Note $note)
     {
         $note->delete();
-        return to_route('notes.index');
+        return to_route('notes.index', $note)->with('success','Note deleted successfully.');
     }
 }
