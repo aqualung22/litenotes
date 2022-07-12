@@ -83,7 +83,17 @@ class NoteController extends Controller
      */
     public function update(Request $request, Note $note)
     {
-        //
+        $request->validate([
+            'title' => 'required|max:120',
+            'text' => 'required'
+        ]);
+
+        $note->update([
+            'title' => $request->title,
+            'text' =>  $request->text
+        ]);
+
+        return to_route('notes.show', $note);
     }
 
     /**
