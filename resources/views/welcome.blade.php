@@ -31,7 +31,7 @@
                 </div>
             @endif
             <h1 class="text-5xl">
-                LiteNotes
+                MyNotes
             </h1>
         </div>
     </body>
